@@ -1,0 +1,102 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  
+  margin: 50px 0;
+}
+.chatbot{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: transparent;
+  text-align: start;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.react-chatbot-kit-chat-message-container {
+  background: rgb(0, 0, 0);
+}
+.avatar-image{
+  cursor: pointer;
+  float: right;
+  position: fixed;
+  bottom: 25px;
+  right: 28px;
+}
+/* dot css animation */
+.dots-container {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pulse-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 25px;
+  background-color: #00aeff;
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+}
+
+.pulse-dot-1 {
+  opacity: 0.5;
+  animation: pulse 1.5s ease infinite;
+}
+
+.pulse-dot-2 {
+  animation: pulse 1.5s ease infinite;
+  animation-delay: 0.5s;
+}
+
+.pulse-dot-3 {
+  animation: pulse 1.5s ease infinite;
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(1, 1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    opacity: 0.4;
+    transform: scale(1, 1);
+  }
+}
+
+/* circle */
+.circle {
+  width: 80px;
+  height: 80px;
+  line-height: 200px;
+  border-radius: 50%; /* the magic */
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.blue {
+  background-color: rgba(77, 77, 80, 0.185);  
+}
+.blue:hover{
+  cursor: pointer;
+}
+

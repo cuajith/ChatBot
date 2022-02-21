@@ -1,0 +1,43 @@
+.login-register{
+    display: flex;
+    flex-direction: row;
+}
+.navbar{
+    background-color: rgb(0 0 0 / 8%) !important;
+}
+.me-auto ul{
+    float: right !important;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#navbarSupportedContent{
+    margin-left: 700px;
+}
+.nav-item{
+    padding: 0px 20px;
+}
+.nav-item .nav-link{
+    color: rgba(0, 0, 0, 0.76);
+}
+.dropdown-menu a{
+    color: rgb(0 0 0 / 72%);
+}
+.navbar-brand{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 30px;
+    font-weight: bold;
+    color: rgb(37 37 37 / 90%) !important;
+}
+/* Logout css */
+
+
+
+@media (max-width:767px){
+    #navbarSupportedContent{
+        margin-left: 0px;
+    }
+    .login-register{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
