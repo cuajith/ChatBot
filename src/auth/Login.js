@@ -7,6 +7,7 @@ import {toast,ToastContainer  } from 'react-toastify';
 import "./Login.css"
 
 
+
 const Login = (props) =>{
   const formik = useFormik({
     initialValues: {
@@ -36,11 +37,11 @@ const Login = (props) =>{
           toast.success("You are Logged In!");
           localStorage.setItem('auth',JSON.stringify(res.data));
           localStorage.setItem("email",data.email)
-          props.history.push('/dashboard');
+          props.history.push('/dashboardmain');
           
       })
       .catch(err=>{
-        toast.error(err.response.data);
+        toast.error("Login Failed");
       })
     }
   });

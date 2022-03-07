@@ -96,7 +96,7 @@ const PasswordForm = (props) => {
                         }
                     </div>
                     <div>
-                        <label className='form-label'>Password</label>
+                        <label className='form-label'>Create New Password</label>
                         <input type="password" className='form-control' name="password"
                             autoComplete='off' value={inputField.password} onChange={inputHandler} />
                         {

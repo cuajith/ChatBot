@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Navbar.css"
+import { Avatar } from '@mui/material'
 
 const Logout = () => {
     const email = localStorage.getItem("email")
@@ -11,8 +12,9 @@ const Logout = () => {
             <div class="collapse navbar-collapse" id="navbar-list-4">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="./images/avatar.png" width="30" height="30" class="rounded-circle" />
+                        <a class="nav-link" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {/*<img src="./images/avatar.png" width="30" height="30" class="rounded-circle" />*/}
+                            <Avatar src="/broken-image.jpg" />
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style={{textAlign:"center"}}>
                             <p style={{textAlign:"center",color: "rgb(0 0 0 / 72%)"}}>signed in as <span style={{fontWeight:"bold",color:"rgb(0 0 0)"}}>{email}</span></p><hr/>
@@ -32,7 +34,7 @@ export default function Navbar() {
     const token = localStorage.getItem("auth");
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light ">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">DigiBot</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

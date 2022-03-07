@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+    z-index: 1000;
+    position: absolute;
+    left: -18px;
+    width: 250px;
+    height: 700px;
+    /* margin-left: -171px; */
+    overflow-y: scroll;
+    background: #6c757d24;
+    transition: all 0.5s ease;
+    margin-top: -20px;
+
+}
+
+#sidebar header a {
+  color:  black;
+  display: block;
+  text-decoration: none;
+}
+
+#sidebar header a:hover {
+  color: black;
+}
+
+#sidebar .nav a{
+    background: none;
+    border-bottom: 1px solid #b7b7b7;
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 15px;
+    padding: 10px 20px;
+    display: flex;
+    width: 250px;
+    
+}
+#sidebar .nav{
+    margin-top: 50px;
+}
+#sidebar .nav a:hover{
+  background: #b7b7b7;
+  padding: 10px 20px;
+  color: black;
+}
+.install-page-content{
+    display: flex;
+    flex-direction: column;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+    margin-left: 400px !important;
+    padding: 10px;
+}
+.install-page-content-para{
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+}
+.install-page-content Button{
+    margin-top: 20px;
+}

@@ -1,0 +1,40 @@
+#setup-header{
+    background-color: #fff!important;
+    z-index: 2;
+     position: absolute;
+     top: 0;
+     left: 0;
+    width: 95%;
+     height: 3em;
+     margin-top: 75px;
+     margin-left: 80px;
+     display: flex;
+     flex-direction: row;
+}
+.setup-para{
+    padding: 10px 200px !important;
+    margin-left: 20px !important;
+}
+.active, .setup-para:hover{
+    background-color: rgba(150, 154, 158, 0.377) !important;
+    border-radius: 20px !important;
+}
+.view-flow-setup{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+.setup-content{
+    margin-top: 80px;
+    margin-left: 70px;
+     display: flex;
+     flex-direction: column;
+}
+.setup-main-content{
+    margin: -53% 2%;
+   border-radius: 2px;
+  display: inline-block;
+  height: 680px;
+  position: relative;
+  width: 40%;
+}
