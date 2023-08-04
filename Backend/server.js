@@ -5,7 +5,7 @@ const userRouter = require('./userRouter')
 const cors = require('cors')
 const morgan = require('morgan')
 
-mongoose.connect("mongodb+srv://ajith080:mongoatlas@cluster0.62w7s.mongodb.net/User?retryWrites=true&w=majority", 
+mongoose.connect("mongodb+srv://username:password@cluster0.62w7s.mongodb.net/User?retryWrites=true&w=majority", 
 ()=>console.log("Database Connected"))
 
 app.use(express.json())
